@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-wrap">
+      <div class="container header-inner">
+        <div class="logo">
+          <a class="logo-link" href="../index.html">My WebSite</a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link"
+                href="../index.html">Главная</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link"
+                href="../pages/articles.html">Статьи</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link"
+                href="../pages/catalog.html">Каталог</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link"
+                href="../pages/contacts.html">Контакты</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link"
+                href="../pages/gallery.html">Галерея</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link"
+                href="../pages/page-nav.html">Навигация</a></li>
+          </ul>
+        </nav>
+        <div class="burger-image"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-wrap">
+      <div class="container">
+        <h1 class="title contacts-title">Регистрация</h1>
+
+        <form action="register.php" method="get">
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Базовая информация</legend>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="surname">Фамилия</label>
+              <input class="form-input input--capitalize" id="surname"
+                name="surname" placeholder="Введите фамилию" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="name">Имя</label>
+              <input class="form-input input--capitalize" id="name" name="name"
+                placeholder="Введите имя" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="patronymic">Отчество</label>
+              <input class="form-input input--capitalize" id="patronymic"
+                name="patronymic" placeholder="Введите отчество" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="email">Email</label>
+              <input class="form-input input-text" id="email" name="email"
+                placeholder="Email" type="email">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="password">Пароль</label>
+              <input class="form-input" id="password" name="password"
+                placeholder="Введите пароль" type="password">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="site">Адрес сайта</label>
+              <input class="form-input" id="site" name="site" type="text"
+                value="mysite.name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="date">Дата рождения</label>
+              <input class="form-input" id="date" name="date" type="date">
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="file">Загрузите фото</label>
+              <input class="form-input input-text" id="file" name="file"
+                type="file">
+            </div>
+
+            <div class="hidden">
+              <label>Скрытое поле<input type="hidden"></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Единственный выбор</legend>
+            <div class="form-group-sm">
+              <input class="form-radio" id="gender-male" type="radio"
+                name="gender" value="male">
+              <label class="form-subtitle" for="gender-male">Мужчина</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input class="" id="gender-female" type="radio" name="gender"
+                value="female">
+              <label class="form-subtitle" for="gender-female">Женщина</label>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Множественный выбор</legend>
+
+            <h4 class="form-subtitle ">Опрос: предпочитаемая вами кухня</h4>
+
+            <div class="form-group-sm">
+              <input id="kitchen-ua" checked name="kitchen" value="ua"
+                type="checkbox">
+              <label class="form-subtitle" for="kitchen-ua">Украинская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="kitchen-uk" name="kitchen" value="uk" type="checkbox">
+              <label class="form-subtitle" for="kitchen-uk">Английская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="kitchen-ch" name="kitchen" value="ch" type="checkbox">
+              <label class="form-subtitle" for="kitchen-ch">Китайская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="kitchen-ge" name="kitchen" value="ge" type="checkbox">
+              <label class="form-subtitle" for="kitchen-ge">Грузинская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="kitchen-gr" name="kitchen" value="gr" type="checkbox">
+              <label class="form-subtitle" for="kitchen-gr">Греческая</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Многострочное поле</legend>
+            <div class="form-group">
+              <label class="form-subtitle" for="txt">О себе</label>
+              <textarea class="form-placeholder" name="txt" id="txt" cols="40"
+                rows="5" placeholder="Введите информацию о себе..."></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Кнопки управления формой</legend>
+
+            <div class="form-group">
+              <button class="btn">Зарегистрироваться</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="submit">Очистить форму</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="container footer-inner">
+        <div class="copyright">&copy; Serhii Yavorskyi</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
