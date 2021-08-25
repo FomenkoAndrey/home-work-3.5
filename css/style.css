@@ -6,6 +6,16 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  overflow-x: hidden;
+}
+
 ul,
 li {
   list-style: none;
@@ -14,12 +24,6 @@ li {
 a {
   color: #ffffff;
   text-decoration: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #000000;
-  overflow-x: hidden;
 }
 
 .container {
